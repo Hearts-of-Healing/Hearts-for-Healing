@@ -1,0 +1,26 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <!-- Mobile menu toggle button -->
+    <span class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</span>
+    
+    <!-- Navbar menu -->
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="get-involved.html">Get Involved</a></li>
+      <li><a href="impact.html">Our Impact</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+  // Mobile Menu Toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  });
+</script>

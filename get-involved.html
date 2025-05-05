@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get Involved - Spreading Positivity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar Loading Script -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+      })
+      .catch(error => console.error('Error loading the navbar:', error));
+  </script>
+
+  <!-- Hero Section -->
+  <header class="hero small-hero">
+    <h1>Get Involved</h1>
+    <p>Join us in spreading kindness and uplifting patients nationwide.</p>
+  </header>
+
+  <!-- Main Content Section -->
+  <section class="content">
+    <h2>Ways to Join</h2>
+    <p>There are many ways you can contribute to our mission. Whether you have a specific skill set or simply want to help, we welcome you to get involved.</p>
+    <ul>
+      <li><strong>Grant Writer:</strong> Help us apply for funding and support to expand our reach.</li>
+      <li><strong>Volunteer:</strong> Assist with card-making, gift assembly, and delivery to patients.</li>
+      <li><strong>Outreach Member:</strong> Build partnerships with organizations and recruit volunteers.</li>
+      <li><strong>Creative Team Member:</strong> Design cards, artwork, and social media posts to promote our cause.</li>
+      <li><strong>Web & Tech:</strong> Manage or contribute to our website and digital tools to improve user experience.</li>
+    </ul>
+
+    <h2>Chapter Application Form</h2>
+    <p>If you'd like to join us in spreading positivity, please fill out the form below, and we’ll get in touch with you soon!</p>
+
+    <div class="form-embed">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSedGcanU1q7nmjdIa3A3ezpqWdHPMtrJH-uKI-368u2LQyxGg/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Hearts of Healing. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

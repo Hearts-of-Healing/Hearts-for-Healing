@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Hearts of Healing is a community initiative bringing joy through handmade cards and gifts to those in need. Join us in spreading kindness." />
+  <meta name="keywords" content="hearts of healing, kindness, cards, gifts, charity, community" />
+  <meta name="author" content="Hearts of Healing" />
+  <title>Home - Hearts of Healing</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+      })
+      .catch(error => console.error('Error loading the navbar:', error));
+  </script>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Hearts of Healing</h1>
+    <p>Spreading positivity, one heart at a time.</p>
+  </header>
+
+  <!-- Main Content Section -->
+  <section class="content">
+    <h2>Welcome to Hearts of Healing</h2>
+    <p>At Hearts of Healing, we believe that small acts of kindness can make a big difference. We are a non-profit organization that aims to create handmade gifts and cards to bring smiles to patients across the country. Whether you're an individual or an organization, you can be part of our mission.</p>
+
+    <h3>Our Mission</h3>
+    <p>Our mission is simple: we strive to bring joy, hope, and healing to those facing health challenges by sending them personal, handmade gifts and heartfelt messages. We create beautiful, custom cards and gifts that touch the hearts of recipients and remind them that they are cared for and supported by a larger community.</p>
+
+    <h3>What We Do</h3>
+    <ul>
+      <li><strong>Handmade Cards:</strong> Our volunteers create unique, thoughtful cards that are personalized for each patient.</li>
+      <li><strong>Gift Packages:</strong> We provide small care packages filled with comforting items to help patients feel supported.</li>
+      <li><strong>Community Engagement:</strong> We host events and activities to raise awareness and involve others in spreading kindness.</li>
+    </ul>
+
+    <h3>How You Can Help</h3>
+    <p>There are several ways you can contribute to our cause:</p>
+    <ul>
+      <li><strong>Donate:</strong> Your donations help fund our initiatives and bring more smiles to patients in need.</li>
+      <li><strong>Volunteer:</strong> Join us in creating cards, packing care packages, and more!</li>
+      <li><strong>Spread the Word:</strong> Share our mission with your friends and family to help us grow.</li>
+    </ul>
+
+    <p>Together, we can make a difference. Thank you for your support!</p>
+  </section>
+
+  <!-- Scroll-to-top Button -->
+  <button id="scrollToTop">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

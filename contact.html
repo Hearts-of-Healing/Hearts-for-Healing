@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Hearts of Healing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar Loading Script -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+      })
+      .catch(error => console.error('Error loading the navbar:', error));
+  </script>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you!</p>
+  </header>
+
+  <!-- Main Content Section -->
+  <section class="content">
+    <h2>Reach Out</h2>
+    <p>For partnerships, volunteer questions, or general inquiries, you can contact us directly:</p>
+
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:heartsforhealing2025@gmail.com">heartsforhealing2025@gmail.com</a></li>
+      <li><strong>Instagram:</strong> <a href="https://www.instagram.com/heartsforhealing_?igsh=dHh4cTU1YTVsODNh" target="_blank">@heartsforhealing</a></li>
+      <li><strong>Mailing Address:</strong> PO Box 123, Your City, State ZIP</li>
+    </ul>
+
+    <h2>Send a Message</h2>
+    <p>Feel free to fill out the form below, and we'll get back to you as soon as possible!</p>
+
+    <!-- Embedded Google Form -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdF9w2AiBpz0q2QqtUBb2z_UzCbEOHUZZj5l9OBb54Ugc84Q/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>"
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Hearts of Healing. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

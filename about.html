@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Hearts of Healing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar Loading Script -->
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+      })
+      .catch(error => console.error('Error loading the navbar:', error));
+  </script>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>About Hearts of Healing</h1>
+    <p>Learn more about who we are and what we do.</p>
+  </header>
+
+  <!-- Main Content -->
+  <section class="content">
+    <h2>Our Story</h2>
+    <p>Hearts of Healing was founded with the goal of spreading love, joy, and hope to those facing health challenges. Our journey began in 2015 when a group of friends decided to create personalized, handmade cards for patients in local hospitals. The positive feedback we received inspired us to expand our efforts and help even more people.</p>
+
+    <h2>Our Vision</h2>
+    <p>We envision a world where every patient, regardless of their condition, feels supported and loved. Through our efforts, we aim to create a global network of individuals and organizations who are committed to spreading kindness and healing to those in need.</p>
+
+    <h2>Our Core Values</h2>
+    <ul>
+      <li><strong>Compassion:</strong> We approach every project with empathy, understanding that every gesture of kindness can make a difference.</li>
+      <li><strong>Community:</strong> We believe in the power of coming together to create meaningful impact.</li>
+      <li><strong>Hope:</strong> We provide more than just gifts; we offer hope to those who need it most.</li>
+      <li><strong>Creativity:</strong> We take pride in offering unique, creative solutions to bring smiles to people in difficult times.</li>
+    </ul>
+
+    <h2>Our Team</h2>
+    <p>Our team is made up of passionate volunteers, creative individuals, and dedicated professionals who are committed to making the world a better place, one heart at a time.</p>
+    <ul>
+      <li><strong>Founder:</strong> Jane Doe – A passionate volunteer and advocate for mental health.</li>
+      <li><strong>Volunteer Coordinator:</strong> John Smith – Organizes our volunteer efforts and events.</li>
+      <li><strong>Creative Director:</strong> Emily Johnson – Leads the design of our cards and gift packages.</li>
+      <li><strong>Community Manager:</strong> Mark Lee – Engages with our supporters and grows our community.</li>
+    </ul>
+
+    <h2>Our Impact</h2>
+    <p>Since our founding, we have touched the lives of thousands of patients through our handmade cards and care packages. We continue to grow and expand our reach, bringing comfort and healing to people in hospitals, nursing homes, and rehabilitation centers across the country.</p>
+
+    <blockquote>
+      "Receiving a card from Hearts of Healing made my day brighter. It reminded me that I’m not alone in my journey." – A grateful recipient
+    </blockquote>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Hearts of Healing. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
